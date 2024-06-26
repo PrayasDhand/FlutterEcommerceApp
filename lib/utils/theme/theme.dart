@@ -1,3 +1,10 @@
+import 'package:ecommerce_application/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/bottom_sheet_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/checkbox_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/chip_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/outlined_button_theme.dart';
+import 'package:ecommerce_application/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:ecommerce_application/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +18,12 @@ class TAppTheme {
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     textTheme: TTextTheme.lightTextTheme,
+    chipTheme: TChipTheme.lightChipTheme,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
+    checkboxTheme: TCheckBoxTheme.lightCheckBoxTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: TTextFieldTheme.lightInputDecorationTheme,
     elevatedButtonTheme: const ElevatedButtonThemeData(),
   );
   static ThemeData darkTheme = ThemeData(
@@ -20,5 +33,12 @@ class TAppTheme {
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
+    checkboxTheme: TCheckBoxTheme.darkCheckBoxTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+    chipTheme: TChipTheme.darkChipTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: TTextFieldTheme.darkInputDecorationTheme,
+    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    appBarTheme: TAppBarTheme.darkAppBarTheme,
   );
 }
